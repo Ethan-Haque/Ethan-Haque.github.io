@@ -7,7 +7,6 @@ import {
   FaFacebook,
   FaLinkedinIn,
 } from "react-icons/fa";
-import resume from "../assets/Resume.pdf";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 const Navbar = () => {

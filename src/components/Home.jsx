@@ -15,10 +15,7 @@ const Home = () => {
           I'm a Developer.
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet
-          eros massa, in luctus elit cursus nec. Curabitur consectetur lorem
-          feugiat turpis malesuada, vitae porta velit dignissim. Integer
-          efficitur magna a velit tincidunt accumsan. 
+          // Profile
         </p>
         <div>
         <Link to='work' smooth={true} duration={500}>
