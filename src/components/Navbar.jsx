@@ -1,6 +1,15 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-
+import {
+  FaBars,
+  FaTimes,
+  FaGithub,
+  FaLinkedin,
+  FaFacebook,
+  FaLinkedinIn,
+} from "react-icons/fa";
+import resume from "../assets/Resume.pdf";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
@@ -13,9 +22,21 @@ const Navbar = () => {
 
       {/* Menu */}
       <ul className="hidden md:flex">
-        <li className="text-xl">Home</li>
-        <li className="text-xl">Portfolio</li>
-        <li className="text-xl">About</li>
+        <a href="https://www.linkedin.com/in/ethan-haque-580bb2149/" >
+        <li className="text-xl">
+          <FaLinkedin size={30} />
+        </li>
+        </a>
+        <a href="https://github.com/Ethan-Haque" >
+        <li className="text-xl">
+          <FaGithub size={30} />
+        </li>
+        </a>
+        <a href="mailto:eth.haque@gmail.com" >
+        <li className="text-xl">
+          <HiOutlineMail size={30} />
+        </li>
+        </a>
       </ul>
 
       {/* Hamburger */}
@@ -24,10 +45,16 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0d47a1] flex flex-col justify-center items-center'}>
-        <li className="py-6 text-4xl">Home</li>
-        <li className="py-6 text-4xl">Portfolio</li>
-        <li className="py-6 text-4xl">About</li>
+      <ul
+        className={
+          !nav
+            ? "hidden"
+            : "absolute top-0 left-0 w-full h-screen bg-[#0d47a1] flex flex-col justify-center items-center"
+        }
+      >
+        <li className="py-6 text-4xl"><FaLinkedin size={30} /></li>
+        <li className="py-6 text-4xl"><FaGithub size={30} /></li>
+        <li className="py-6 text-4xl"> <HiOutlineMail size={30} /></li>
       </ul>
     </div>
   );
