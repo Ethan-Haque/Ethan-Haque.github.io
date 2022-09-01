@@ -5,12 +5,10 @@ import NumPadImg from "../assets/NumPad.JPEG";
 
 const Projects = () => {
   return (
-    <div name="projects" className="w-full md:h-screen text-gray-300 bg-[#0d47a1]">
+    <div name="projects" className="w-full md:h-screen text-gray-100 bg-[#0d47a1]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline text-gray-300 border-gray-300">
-            Projects:
-          </p>
+        <p className='text-4xl font-bold inline border-b-4 border-gray-200 '>Projects</p>
         </div>
 
         <div className="grid sm:grid-cols-1 md:grid-cols-1 gap-4">

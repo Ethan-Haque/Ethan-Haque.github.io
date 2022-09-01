@@ -18,13 +18,13 @@ const Home = () => {
           // Profile
         </p>
         <div>
-        <Link to='work' smooth={true} duration={500}>
-          <button className="group text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-black">
-            View Work
-            <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3" />
-            </span>
-          </button>
+          <Link to='projects' smooth={true} duration={1000}>
+            <button className="group text-white border-2 rounded-lg px-6 py-3 my-2 flex items-center bg-[#0a4093] hover:bg-[#08306d]">
+              View Projects
+              <span className="group-hover:rotate-90 duration-300">
+                <HiArrowNarrowRight className="ml-3" />
+              </span>
+            </button>
           </Link>
         </div>
       </div>

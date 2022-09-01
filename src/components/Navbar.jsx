@@ -14,7 +14,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0d47a1] text-white">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08306d] text-white ">
       <div>
         <h1 className="text-4xl">E H</h1>
       </div>

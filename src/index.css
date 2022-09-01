@@ -25,9 +25,9 @@
   }
 }
 .content-div:hover {
-    background-image: linear-gradient(
-        to right,
-        rgba(112, 157, 255, 0.8),
-        #0d47a1   
-    )!important;
+  background-image: linear-gradient(
+    to right,
+    rgba(112, 157, 255, 0.8),
+    #0d47a1
+  ) !important;
 }
