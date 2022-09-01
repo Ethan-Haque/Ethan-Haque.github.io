@@ -14,7 +14,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0d47a1] text-white">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08306d] text-white ">
       <div>
         <h1 className="text-4xl">E H</h1>
       </div>
@@ -22,19 +22,19 @@ const Navbar = () => {
       {/* Menu */}
       <ul className="hidden md:flex">
         <a href="https://www.linkedin.com/in/ethan-haque-580bb2149/" >
-        <li className="text-xl">
-          <FaLinkedin size={30} />
-        </li>
+          <li className="text-xl">
+            <FaLinkedin size={30} />
+          </li>
         </a>
         <a href="https://github.com/Ethan-Haque" >
-        <li className="text-xl">
-          <FaGithub size={30} />
-        </li>
+          <li className="text-xl">
+            <FaGithub size={30} />
+          </li>
         </a>
         <a href="mailto:eth.haque@gmail.com" >
-        <li className="text-xl">
-          <HiOutlineMail size={30} />
-        </li>
+          <li className="text-xl">
+            <HiOutlineMail size={30} />
+          </li>
         </a>
       </ul>
 

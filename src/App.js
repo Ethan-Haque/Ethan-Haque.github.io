@@ -1,13 +1,13 @@
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import Work from "./components/Work";
+import Projects from "./components/Projects";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Home/>
-      <Work/>
+      <Home />
+      <Projects />
     </div>
   );
 }
