@@ -7,12 +7,12 @@ const Home = () => {
     <div name="home" className="w-full h-screen bg-[#0d47a1]">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        <p className="text-white">Hello, my name is</p>
-        <h1 className="text-4xl sm:text-7xl foxt-bold text-[#ffffff]">
-          Ethan Haque
+        <p className="text-white text-xl">Hello, my name is</p>
+        <h1 className="text-5xl sm:text-7xl text-[#ffffff]">
+          Ethan Haque.
         </h1>
-        <h2 className="text-4xl sm:text-7xl foxt-bold text-[#ccd6f6]">
-          I'm a Developer.
+        <h2 className="text-4xl sm:text-7xl text-[#ccd6f6]">
+          I'm a Junior Developer.
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
           // Profile
