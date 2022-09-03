@@ -1,41 +1,37 @@
 import React, { useState } from "react";
+import { Link } from 'react-scroll';
 import {
   FaBars,
   FaTimes,
-  FaGithub,
-  FaLinkedin,
-  FaFacebook,
-  FaLinkedinIn,
 } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08306d] text-white ">
+    <div className="fixed w-full h-[70px] flex justify-between items-center px-4 font-bold bg-[#08306d] text-white ">
       <div>
         <h1 className="text-4xl">E H</h1>
       </div>
 
       {/* Menu */}
       <ul className="hidden md:flex">
-        <a href="https://www.linkedin.com/in/ethan-haque-580bb2149/" >
-          <li className="text-xl">
-            <FaLinkedin size={30} />
-          </li>
-        </a>
-        <a href="https://github.com/Ethan-Haque" >
-          <li className="text-xl">
-            <FaGithub size={30} />
-          </li>
-        </a>
-        <a href="mailto:eth.haque@gmail.com" >
-          <li className="text-xl">
-            <HiOutlineMail size={30} />
-          </li>
-        </a>
+        <li>
+          <Link to='home' smooth={true} duration={1000}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to='projects' smooth={true} duration={1000}>
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link to='resume' smooth={true} duration={1000}>
+            Resume
+          </Link>
+        </li>
       </ul>
 
       {/* Hamburger */}
@@ -50,10 +46,21 @@ const Navbar = () => {
             ? "hidden"
             : "absolute top-0 left-0 w-full h-screen bg-[#0d47a1] flex flex-col justify-center items-center"
         }
-      >
-        <li className="py-6 text-4xl"><FaLinkedin size={30} /></li>
-        <li className="py-6 text-4xl"><FaGithub size={30} /></li>
-        <li className="py-6 text-4xl"> <HiOutlineMail size={30} /></li>
+      ><li className='py-6 text-3xl'>
+          <Link onClick={handleClick} to='home' smooth={true} duration={1000}>
+            Home
+          </Link>
+        </li>
+        <li className='py-6 text-3xl'>
+          <Link onClick={handleClick} to='projects' smooth={true} duration={1000}>
+            Projects
+          </Link>
+        </li>
+        <li className='py-6 text-3xl'>
+          <Link onClick={handleClick} to='resume' smooth={true} duration={1000}>
+            resume
+          </Link>
+        </li>
       </ul>
     </div>
   );
