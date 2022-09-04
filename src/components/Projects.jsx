@@ -1,7 +1,7 @@
 import React from "react";
 import TypingTestGif from "../assets/TypingTest.gif";
-import DroneSimImg from "../assets/Dronesim.png";
-import NumPadImg from "../assets/NumPad.JPEG";
+import DroneSimImg from "../assets/Dronesim.jpg";
+import NumPadImg from "../assets/NumPad.jpg";
 
 const Projects = () => {
   return (
