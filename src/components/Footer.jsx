@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="fixed h-[35px] md:h-[50px] md:rounded-tl-2xl flex justify-center bottom-0 w-full md:w-auto md:right-0 items-center px-4 text-white bg-[#08306d] ">
             {/* Menu */}
             <ul className="flex">
-                <a href="https://www.linkedin.com/in/ethan-haque-580bb2149/" >
+                <a href="https://www.linkedin.com/in/ethan-haque/" >
                     <li className="text-xl">
                         <FaLinkedin size={30} />
                     </li>

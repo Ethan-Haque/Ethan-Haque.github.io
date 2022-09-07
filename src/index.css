@@ -31,3 +31,12 @@
     #0d47a1
   ) !important;
 }
+
+.fadeText {
+  opacity: 0;
+  transition: 2s opacity;
+}
+
+.fade-in {
+  opacity: 1;
+}
