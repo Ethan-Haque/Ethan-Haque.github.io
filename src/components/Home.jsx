@@ -7,7 +7,7 @@ const Home = () => {
   React.useEffect(() => {
     // list of text to fade-in
     let fadeList = document.querySelectorAll(".fadeText");
-    
+
     // iterate over list to start animation with delays
     for (let i = 0; i < fadeList.length; i++) {
       setTimeout(() => {
@@ -33,12 +33,12 @@ const Home = () => {
           <ul className="text-[#ccd6f6] py-4 max-w-[700px] font-bold">
           </ul>
         </div>
-        <div className="fadeText">
+        <div className="fadeText w-[190px]">
           <Link to='projects' smooth={true} duration={1000}>
             <button className="group text-white border-2 rounded-lg px-6 py-3 my-2 flex items-center bg-[#0a4093] hover:bg-[#08306d]">
               View Projects
               <span className="group-hover:rotate-90 duration-300 text-[20px]">
-                <HiArrowNarrowRight className="ml-3"  />
+                <HiArrowNarrowRight className="ml-3" />
               </span>
             </button>
           </Link>
