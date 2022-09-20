@@ -21,7 +21,7 @@ const Projects = () => {
                 React Typing Test
               </span>
               <div className="pt-8 text-center">
-                <a href="https://ethan-haque.netlify.app/">
+                <a href="https://eh-type.netlify.app/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
