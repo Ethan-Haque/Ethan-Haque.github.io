@@ -4,6 +4,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 
 const Home = () => {
 
+  // run once 
   React.useEffect(() => {
     // list of text to fade-in
     let fadeList = document.querySelectorAll(".fadeText");
@@ -12,10 +13,10 @@ const Home = () => {
     for (let i = 0; i < fadeList.length; i++) {
       setTimeout(() => {
         fadeList[i].classList.add('fade-in');
-      }, 500 + i * 1250);
-
+      }, 500 + i * 1100);
     }
   }, []);
+
   return (
     <div name="home" className="w-full h-screen bg-[#0d47a1]">
       {/* Container */}
@@ -30,8 +31,10 @@ const Home = () => {
           <h2 className="text-4xl sm:text-7xl text-[#ccd6f6] fadeText">
             I'm a Full Stack Developer.
           </h2>
-          <ul className="text-[#ccd6f6] py-4 max-w-[700px] font-bold">
-          </ul>
+          <p className="text-[#ccd6f6] py-4 max-w-[660px] font-bold fadeText">
+            Over the last year, I have gained both professional and personal experience developing websites, mobile apps and bots with different tech stacks.
+            I am now looking to join a team where I can both demonstrate my skills and improve upon them.
+          </p>
         </div>
         <div className="fadeText w-[190px]">
           <Link to='projects' smooth={true} duration={1000}>
