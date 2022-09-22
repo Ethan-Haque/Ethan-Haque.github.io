@@ -23,15 +23,15 @@ const Home = () => {
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <div className="fadeText">
           <p className="text-white text-2xl">Hello, my name is</p>
-          <h1 className="text-5xl sm:text-7xl text-[#ffffff] ">
+          <h1 className="text-5xl sm:text-7xl text-white">
             Ethan Haque.
           </h1>
         </div>
         <div>
-          <h2 className="text-4xl sm:text-7xl text-[#ccd6f6] fadeText">
+          <h2 className="text-4xl sm:text-7xl text-slate-300 fadeText">
             I'm a Full Stack Developer.
           </h2>
-          <p className="text-[#ccd6f6] py-4 max-w-[660px] font-bold fadeText">
+          <p className="text-gray-200 py-4 max-w-[660px] font-bold fadeText">
             Over the last year, I have gained both professional and personal experience developing websites, mobile apps and bots with different tech stacks.
             I am now looking to join a team where I can both demonstrate my skills and improve upon them.
           </p>
