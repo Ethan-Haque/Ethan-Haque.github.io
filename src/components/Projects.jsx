@@ -45,7 +45,7 @@ const Projects = () => {
                 Numpad Calculator
               </span>
               <div className="pt-8 text-center">
-                <a href="https://github.com/Ethan-Haque/duckboard-apps">
+                <a href="https://github.com/Ethan-Haque/duckboard-calc">
                   <button className="project-button">
                     Repo
                   </button>
