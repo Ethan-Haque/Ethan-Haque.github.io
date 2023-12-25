@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca');
 
+:root {
+    --linkColor: #73c2fb;
+}
+
 * {
     font-family: 'Lexend Deca';
     line-height: 1.5em;
@@ -9,10 +13,6 @@
 
 body {
     background-color: #191919;
-}
-
-.secondary {
-    color: #b1b7b8;
 }
 
 #container {
@@ -26,6 +26,14 @@ section {
     padding-bottom: 1em;
 }
 
+.secondary {
+    color: #b1b7b8;
+}
+
+.secondary a {
+    color: var(--linkColor);
+}
+
 #profile {
     display: flex;
     align-items: center;
@@ -33,7 +41,16 @@ section {
 }
 
 a {
+    text-decoration: none;
     font-weight: 300;
+}
+
+#email: {
+    transform: 0.2s;
+}
+
+#email a:hover {
+    color: var(--linkColor);
 }
 
 #name {
@@ -44,4 +61,30 @@ a {
 #profile-pic {
     width: 140px;
     border-radius: 50%;
+}
+
+#links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#links a {
+    transition: 0.2s;
+    font-size: 0.9em;
+}
+
+#links a:hover {
+    color: var(--linkColor);
+    font-weight: 100;
+    font-size: 0.9em;
+}
+
+.experience-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-title h4 {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
