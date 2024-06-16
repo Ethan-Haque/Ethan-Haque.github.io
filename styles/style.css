@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca');
+
+:root {
+    --textColor: white;
+    --secondaryTextColor: #c3c6c7;
+    --linkColor: #73c2fb;
+    --borderColor: rgba(255, 255, 255, 0.219);
+}
+
+* {
+    font-family: 'Lexend Deca';
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--textColor);
+}
+
+body {
+    background-color: #191919;
+}
+
+h2{
+    padding-bottom: 1em;
+    margin-bottom:1em;
+    border-bottom: 2px solid var(--borderColor);
+}
+
+p, li, span{
+    color: var(--secondaryTextColor);
+    font-size: 1.05em;
+}
+
+li{
+    line-height: 1.9em;
+}
+
+#container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.secondary {
+    color: #b1b7b8;
+}
+
+.secondary a {
+    color: var(--linkColor);
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 300;
+}
+
+#email {
+    transform: 0.2s;
+}
+
+#email a:hover {
+    color: var(--linkColor);
+}
+
+#name {
+    font-size: 48px;
+    line-height: 1em;
+}
+
+#profile-pic {
+    width: 140px;
+    border-radius: 50%;
+}
+
+#links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#links a {
+    transition: 0.2s;
+    font-size: 0.9em;
+}
+
+#links a:hover {
+    color: var(--linkColor);
+    font-weight: 100;
+    font-size: 0.9em;
+}
+
+.experience-title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.experience-title h4 {
+    font-size: 1.1em;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    word-wrap: break-word;
+}
+
+.experience-card{
+    margin-bottom: 4em;
+    padding-left: 1.5em;
+    margin-left: 0.25em;
+    border-left: 2px solid var(--borderColor);
+}
+
+@media(max-width:660px){
+
+    #profile{
+        flex-direction: column;
+    }
+
+    #profile-pic{
+        width:200px;
+    }
+
+    .experience-card{
+        border-left: none;
+        padding-left: 0;
+    }
+
+}
