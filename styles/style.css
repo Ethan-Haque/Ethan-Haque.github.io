@@ -39,6 +39,10 @@ li{
     padding: 1em;
 }
 
+.technology, .secondary {
+    color: var(--textColor);
+}
+
 .secondary {
     color: #b1b7b8;
 }
