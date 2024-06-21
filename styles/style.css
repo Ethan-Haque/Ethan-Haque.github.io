@@ -85,12 +85,12 @@ a {
     justify-content: space-evenly;
 }
 
-#links a {
+#links a, #links i {
     transition: 0.2s;
     font-size: 0.9em;
 }
 
-#links a:hover {
+#links a:hover, #links i:hover {
     color: var(--linkColor);
     font-weight: 100;
     font-size: 0.9em;
