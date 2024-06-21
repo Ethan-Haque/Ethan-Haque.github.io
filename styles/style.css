@@ -14,29 +14,37 @@
     color: var(--textColor);
 }
 
-body {
+body, .profile {
     background-color: #191919;
 }
 
-h2{
+h2 {
     padding-bottom: 1em;
-    margin-bottom:1em;
+    margin-bottom: 1em;
     border-bottom: 2px solid var(--borderColor);
 }
 
-p, li, span{
+p, li, span {
     color: var(--secondaryTextColor);
     font-size: 1.05em;
 }
 
-li{
+li {
     line-height: 1.9em;
 }
 
+section {
+    min-height: 20vh;
+}
+
 #container {
-    max-width: 700px;
     margin: 0 auto;
     padding: 1em;
+}
+
+#container:not(.top) {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
 }
 
 .technology, .secondary {
@@ -51,6 +59,10 @@ li{
     color: var(--linkColor);
 }
 
+.profile {
+    position: fixed;
+}
+
 #profile {
     display: flex;
     align-items: center;
@@ -63,7 +75,7 @@ a {
 }
 
 #email {
-    transform: 0.2s;
+    transition: 0.2s;
 }
 
 #email a:hover {
@@ -72,7 +84,7 @@ a {
 
 #name {
     font-size: 48px;
-    line-height: 1em;
+    line-height: 0.5em;
 }
 
 #profile-pic {
@@ -96,40 +108,98 @@ a {
     font-size: 0.9em;
 }
 
+#profile #links {
+    width: 90%;
+    font-size: 1.2em;
+    justify-content: space-between;
+}
+
 .experience-title {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    flex-wrap: wrap; 
 }
 
 .experience-title h4 {
     font-size: 1.1em;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-bottom: 0;
+    margin: 0;
     word-wrap: break-word;
 }
 
-.experience-card{
+.experience-card {
     margin-bottom: 4em;
     padding-left: 1.5em;
     margin-left: 0.25em;
     border-left: 2px solid var(--borderColor);
 }
 
-@media(max-width:660px){
+/* Desktop */
+@media (min-width: 1600px) {
+    body {
+        display: flex;
+        position: relative;
+        height: 100%;
+    }
 
-    #profile{
+    #container:not(.top) {
+        padding: 1%;
+        margin: 20px 0px 0 20px;
+        max-width: 45%;
+
+    }
+
+    .profile {
+        left: 25%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+}
+
+/* Tablet */
+@media (max-width: 1600px) {
+    .profile {
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-bottom: 15px;
+        border-radius: 0 0 25px 25px; 
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+    }
+
+    #profile {
+        justify-content: center;
+    }
+
+    #links {
+        padding-bottom: 6px;
+        justify-content: space-evenly;
+    }
+
+    #container {
+        margin-top: 150px; 
+    }
+}
+
+/* Mobile */
+@media (max-width: 660px) {
+    .profile {
+        position: relative;
+        margin-top: 0;
+        padding-top: 0;
+        height: 70vh;
+    }
+
+    #profile {
         flex-direction: column;
     }
 
-    #profile-pic{
-        width:200px;
+    #profile-pic {
+        width: 200px;
     }
 
-    .experience-card{
-        border-left: none;
-        padding-left: 0;
+    .experience-card {
+        padding-left: 17px;
+        margin-left: 0;
     }
-
 }
